@@ -1,1 +1,74 @@
+body{
+    background: lightblue;
+}
 
+h1{
+    color: black;
+}
+
+h2{
+    color: black;
+}
+
+h3{
+    color:black;
+}
+
+.content-table{
+    color:black;
+    border-collapse:collapse;
+    background-color: beige;
+}
+
+.left{
+    float:left;
+}
+
+.clear{
+    clear: both;
+  }
+
+.title{
+    font-size: large;
+}
+
+table th {
+    background-color: rgb(188, 204, 235);
+    width: 20px;
+    height: 20px;
+}
+table th, table td {
+    border: solid 1px black;
+    padding: 5px;
+    text-align: center;    
+}
+
+nav {
+    float: right;
+}
+
+.left{
+    float:left;
+}
+
+input[type="number"]{
+    width: 50px;
+}
+
+.area{
+    font-size: large;
+}
+
+.area2{
+    font-size: large;
+}
+
+.right{
+    float:right;
+}
+#reset-button {
+    border-radius: 8px;
+    font-size: 20pt;
+    height: 50px;
+    width: 150px;
+}
