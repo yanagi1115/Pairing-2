@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="script.css">
+</head>
+
+<body>
+    <h1>Masanori Takayanagi</h1>
+    <h2>プレゼンテーション：ペアリング</h2>
+<div>    
+    <div class="left">
+        <div class="title left">空の表作成</div>
+        <div class="clear"></div>
+        <div class="inputnumber left" style="width : 360px; height : 90px; background-color: yellow;">
+            <label style = "margin-left : 10px">人数：</label><input id="inputnumber" type="number" min="1" max="30" >
+            <button id="emptychartbutton" style="width : 75px; margin-left : 10px; " type="button" text-Align="center">
+            表作成&#x1F40A;
+            </button>
+            <div class="clear" style=" height : 10px"></div>
+            <button id="savebutton" style="width : 75px; margin-left : 10px; " type="button" text-Align="center" >
+            保存&#x1F40A;
+            </button>
+            <button id="displaybutton" style="width : 75px; margin-left : 10px; " type="button" text-Align="center">
+            表示&#x1F40A;
+            </button>
+            <button id="outputbutton">CSVファイルを保存</button>
+        </div>
+        <div class="clear" style=" height : 20px"></div>
+        <div class="title left">データ読込み</div>
+        <div class="clear"></div>
+        <div class="CSVread left" style="width : 360px; height : 90px; background-color: orange;">
+            
+        <form name="readform">
+        <input id="file" type="file" name="readfile">
+        </form>
+            <button id="displaybutton2" style="width : 75px ; margin-left : 10px; " type="button" text-Align="center">
+              表示&#x1F40A;
+            </button>
+        </div>
+    </div>
+
+    <div class="left">
+        <div class="title" style = "margin-left: 30px;">ペアリング前</div>
+        <div class="clear"></div>
+        <table class="content-table left" style = "margin-left: 40px;" >
+            <thead id="initialhead"></thead>
+            <tbody id="initialchart"></tbody>
+        </table>
+    </div>
+</div>
+<div class="clear" style=" height : 20px"></div>
+
+<div>
+    <div class="left">
+        <div class="title left">ペアリング</div>
+        <div class="clear"></div>
+        <div class="inputchange left" style="width : 360px; height : 90px; background-color: green;">
+            <label>ペア：</label><input id="inputchange1" type="number" min="1" max="30"><input id="inputchange2" type="number" min="1" max="30" style="margin-left : 5px;">
+            <button id="changebutton" style="width : 75px ; margin-left : 10px; " type="button" text-Align="center">
+                選択&#x1F40A;
+            </button>
+            <button id="clearbutton" style="width : 75px ; margin-left : 5px; " type="button" text-Align="center">
+                クリア&#x1F40A;
+            </button>
+            <div class="clear" style=" height : 10px"></div>
+            <button id="finishbutton" style="width : 75px ; margin-left : 10px; " type="button" text-Align="center">
+                保存&#x1F40A;
+            </button>
+            <button id="displaybutton3" style="width : 75px ; margin-left : 10px; " type="button" text-Align="center">
+                表示&#x1F40A;
+            </button>
+            <button id="outputCSVbutton">CSVファイルを保存</button>
+        </div>
+        <div>
+        <div class="clear" style=" height : 20px"></div>
+
+        <div class="left">
+        <div class="left">【選択候補】</div> 
+        <div class="clear"></div>
+        <pre class="area left" style="width:90px"></pre>
+        </div>
+
+        <div class="left">
+        <div class="left" style ="margin-left: 50px;">【入力結果】</div> 
+        <div class="clear"></div>
+        <pre class="area2 left" style="margin-left:50px; width:90px;"></pre>
+        </div>
+
+        </div>
+        <div class="clear"></div>
+        <button id="reset-button" class="left">RESET</button>
+        <div id="aaa"></div>
+
+    </div>
+
+    <div class="left">
+        <div class="title left" style = "margin-left: 30px;">ペアリング後</div>
+        <div class="clear"></div>
+        <table class="content-table left" style = "margin-left: 40px;" >
+            <thead id="changehead"></thead>
+            <tbody id="changechart"></tbody>
+        </table>
+    </div>
+</div>
+
+    <nav>
+        <iframe src="20221216.pdf" width="50%" height="50%"></iframe>
+            <style>
+            iframe[src$=".pdf"]{
+                width: 1000px;
+                height:80vh;
+            }
+        </style>
+    </nav>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
